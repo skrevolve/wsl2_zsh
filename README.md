@@ -63,7 +63,7 @@ download: https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20N
 
 2. change font In Windows Terminal options
 
-![image](https://user-images.githubusercontent.com/41939976/216261594-097330a7-c7d1-4502-9af6-a9c8d267c6a2.png)
+![image](https://user-images.githubusercontent.com/41939976/216264656-606fc736-3740-4031-9eca-16aea48b915c.png)
 
 3. install powerlevel10k
 

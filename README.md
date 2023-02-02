@@ -1,7 +1,96 @@
 # WSL2_zsh_golang
 golang install example in WSL2(ubuntu 20.04 LTS) && zsh shell
 
-### Install go
+## WSL2
+
+- Install Windows Terminal app
+
+search for windows terminal in the Windows Store and install it.
+![image](https://user-images.githubusercontent.com/41939976/216258991-f0dfc6ac-3841-433c-bb66-78068cff487a.png)
+
+- Install Linux on Windows with WSL
+
+docs : https://learn.microsoft.com/en-us/windows/wsl/install#step-4---download-the-linux-kernel-update-package
+
+1. Run cmd.exe in administrator mode
+
+2. Enabling the Windows Subsystem for Linux
+>
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+3. Activate Virtual Machine
+>
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+4. Reboot Windows
+
+5. Install WSL
+
+Run cmd.exe in administrator mode
+
+>
+    wsl --list --online
+    wsl --install -d Ubuntu
+
+6. set Ubuntu
+
+![image](https://user-images.githubusercontent.com/41939976/216259872-c08843a7-3cca-42af-87cc-60a1f2a6621e.png)
+
+After entering the account and password, exit the shell.
+
+- Troubleshooting Windows Subsystem for Linux
+
+docs: https://learn.microsoft.com/en-us/windows/wsl/troubleshooting?source=recommendations
+
+## zsh
+
+- Install zsh
+
+>
+    $sudo apt-get update
+    $sudo apt install zsh
+
+- Install oh my zsh
+
+>
+    $sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+1. Install powerlevel10k font
+
+Install the MesloLGS NF font, which includes git branch status display and folder icons on zsh.
+After downloading, double-click the file to install.
+download: https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+
+2. change font In Windows Terminal options
+
+![image](https://user-images.githubusercontent.com/41939976/216261594-097330a7-c7d1-4502-9af6-a9c8d267c6a2.png)
+
+3. install powerlevel10k
+
+>
+    $git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+    $echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+4. config powerlevel10k
+
+Execute the powerlevel10k installation wizard by running it again after exiting the Windows terminal.
+![image](https://user-images.githubusercontent.com/41939976/216262290-01471453-c853-476e-bccc-f7c9801b92f7.png)
+
+5. oh my zsh extension install
+
+install zsh-autosuggestions & zsh-syntax-highlighting
+
+>
+    $git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    $git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    $vi ~/.zshrc
+
+then export plugins
+
+![image](https://user-images.githubusercontent.com/41939976/216263049-e1265a7c-5c81-4c0e-93c3-9cc76ae80f24.png)
+
+
+## Install go
 
 go downloads : https://go.dev/dl/
 latest version now 1.20
@@ -38,7 +127,7 @@ latest version now 1.20
 >
     source ~/.zshrc
 
-### Install Extension in VScode
+## Install Extension in VScode
 
 - Remote WSL
 
@@ -48,7 +137,7 @@ latest version now 1.20
 
 ![image](https://user-images.githubusercontent.com/41939976/216244531-66ef5e98-911c-4414-822d-43f2e20ebd6b.png)
 
-- Go Tools install in VScode
+- Go Tools
 
 As shown in the picture above, if there is something that needs to be installed after accessing it, install it.
 

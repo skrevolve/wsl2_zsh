@@ -8,7 +8,7 @@ golang install example in WSL2(ubuntu 20.04 LTS) && zsh shell
 search for windows terminal in the Windows Store and install it.
 ![image](https://user-images.githubusercontent.com/41939976/216258991-f0dfc6ac-3841-433c-bb66-78068cff487a.png)
 
-- Install Linux on Windows with WSL
+### Install Linux on Windows with WSL
 
 docs : https://learn.microsoft.com/en-us/windows/wsl/install#step-4---download-the-linux-kernel-update-package
 
@@ -38,19 +38,19 @@ Run cmd.exe in administrator mode
 
 After entering the account and password, exit the shell.
 
-- Troubleshooting Windows Subsystem for Linux
+### Troubleshooting Windows Subsystem for Linux
 
 docs: https://learn.microsoft.com/en-us/windows/wsl/troubleshooting?source=recommendations
 
 ## zsh
 
-- Install zsh
+### Install zsh
 
 >
     $sudo apt-get update
     $sudo apt install zsh
 
-- Install oh my zsh
+### Install oh my zsh
 
 >
     $sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
@@ -95,49 +95,49 @@ then export plugins
 go downloads : https://go.dev/dl/
 latest version now 1.20
 
-- if use wget
+### if use wget
 >
     $wget https://golang.org/dl/go1.20.linux-amd64.tar.gz
     $sudo tar -xvf go1.20.linux-amd64.tar.gz
     $sudo mv go /usr/local
     $cp /usr/local/go ~/
 
-- if use apt package (not recommended)
+### if use apt package (not recommended)
 >
     $sudo apt update
     $sudo apt install golang-go
 
 ## Set go environment variable
 
-- if use bash shell
+### if use bash shell
 >
     $vi ~/.bashsrc
 
-- if use zsh shell
+### if use zsh shell
 >
     $vi ~/.zshrc
 
-- add export
+### add export
 >
     export GOROOT=/usr/local/go
     export GOPATH=$HOME/go
     export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-- apply changes
+### apply changes
 >
     source ~/.zshrc
 
 ## Install Extension in VScode
 
-- Remote WSL
+### Remote WSL
 
 ![image](https://user-images.githubusercontent.com/41939976/216244185-8b04a3bb-5a8a-421b-978d-ad683fd22e45.png)
 
-- Go
+### Go
 
 ![image](https://user-images.githubusercontent.com/41939976/216244531-66ef5e98-911c-4414-822d-43f2e20ebd6b.png)
 
-- Go Tools
+### Go Tools
 
 As shown in the picture above, if there is something that needs to be installed after accessing it, install it.
 

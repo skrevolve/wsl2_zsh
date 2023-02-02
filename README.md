@@ -3,7 +3,7 @@ golang install example in WSL2(ubuntu 20.04 LTS) && zsh shell
 
 ## WSL2
 
-- Install Windows Terminal app
+### Install Windows Terminal app
 
 search for windows terminal in the Windows Store and install it.
 ![image](https://user-images.githubusercontent.com/41939976/216258991-f0dfc6ac-3841-433c-bb66-78068cff487a.png)

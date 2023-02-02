@@ -29,8 +29,8 @@ docs : https://learn.microsoft.com/en-us/windows/wsl/install#step-4---download-t
 Run cmd.exe in administrator mode
 
 >
-    wsl --list --online
-    wsl --install -d Ubuntu
+    C:\Users\administartor> wsl --list --online
+    C:\Users\administartor> wsl --install -d Ubuntu
 
 6. set Ubuntu
 
@@ -89,11 +89,15 @@ then export plugins
 
 ![image](https://user-images.githubusercontent.com/41939976/216263049-e1265a7c-5c81-4c0e-93c3-9cc76ae80f24.png)
 
+then  
+>
+    $source ~/.zshrc
 
 ## Install go
 
-go downloads : https://go.dev/dl/
-latest version now 1.20
+download list : https://go.dev/dl/  
+
+latest version now 1.20 (2023-02-02)
 
 ### if use wget
 >
@@ -125,7 +129,7 @@ latest version now 1.20
 
 ### apply changes
 >
-    source ~/.zshrc
+    $source ~/.zshrc
 
 ## Install Extension in VScode
 

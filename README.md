@@ -1,7 +1,7 @@
-# WSL2_zsh_golang
-golang install example in WSL2(ubuntu 20.04 LTS) && zsh shell
+# wsl2_zsh_golang
+golang install example in wsl2(ubuntu 20.04 LTS) & zsh shell
 
-## WSL2
+## wsl2
 
 ### Install Windows Terminal app
 

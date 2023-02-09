@@ -104,7 +104,7 @@ latest version now 1.20 (2023-02-02)
     $wget https://golang.org/dl/go1.20.linux-amd64.tar.gz
     $sudo tar -xvf go1.20.linux-amd64.tar.gz
     $sudo mv go /usr/local
-    $cp /usr/local/go ~/
+    $cp -r /usr/local/go ~/
 
 ### if use apt package (not recommended)
 >

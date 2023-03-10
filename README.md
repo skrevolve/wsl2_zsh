@@ -1,5 +1,5 @@
-# wsl2_zsh_golang
-golang install example in wsl2(ubuntu 20.04 LTS) & zsh shell
+# wsl2_zsh
+install example in wsl2(ubuntu 20.04 LTS) & zsh shell
 
 ## wsl2
 
@@ -146,3 +146,31 @@ latest version now 1.20 (2023-02-02)
 As shown in the picture above, if there is something that needs to be installed after accessing it, install it.
 
 ![image](https://user-images.githubusercontent.com/41939976/216246374-ab38fa92-679a-4c66-a9cb-313a2d196b2f.png)
+
+## Install Rust
+
+download list : https://www.rust-lang.org/learn/get-started
+
+Rust updates very frequently. If you have installed Rustup some time ago, chances are your Rust version is out of date.
+
+### Download
+>
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+## Set Rust environment variale
+
+### if use bash shell
+>
+    $vi ~/.bashsrc
+
+### if use zsh shell
+>
+    $vi ~/.zshrc
+
+### add export
+>
+    export PATH="$HOME/.cargo/bin:$PATH"
+
+### apply changes
+>
+    $source ~/.zshrc

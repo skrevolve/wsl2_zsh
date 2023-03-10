@@ -171,9 +171,10 @@ Rust updates very frequently. If you have installed Rustup some time ago, chance
 >
     export PATH="$HOME/.cargo/bin:$PATH"
 
-### apply changes
+### apply changes and add config
 >
     $source ~/.zshrc
+    $CARGO_NET_GIT_FETCH_WITH_CLI=true
     
 ### check version
 >

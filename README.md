@@ -174,3 +174,11 @@ Rust updates very frequently. If you have installed Rustup some time ago, chance
 ### apply changes
 >
     $source ~/.zshrc
+    
+### check version
+>
+    $rustc --version
+    $cargo --version
+
+
+
